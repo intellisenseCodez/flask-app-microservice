@@ -1,0 +1,38 @@
+version: '3.1'
+
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: horlar
+      POSTGRES_PASSWORD: example
+      POSTGRES_DB: review
+    volumes:
+      - dbvolume:/var/lib/postgresql/data
+    
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 9090:8080
+
+  backend:
+    image: reviewbackend:v1
+    environment:
+      DB_USER: horlar
+      DB_PASS: example
+      DB: review
+      DB_HOST: db
+    links:
+      - db
+
+  frontend:
+    image: reviewfrontend:v1
+    ports:
+      - 80:5000
+    links:
+      - backend
+
+volumes:
+  dbvolume:

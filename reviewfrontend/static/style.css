@@ -1,0 +1,137 @@
+body{
+    background: crimson;
+}
+
+.main-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav{
+
+    display: flex;
+   
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px;
+   
+}
+
+form{
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.nav-item {
+    font: 30px;
+    color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.nav-item:hover {
+    color: navy;
+    margin-left: 40px;
+    margin-right: 40px;
+    background: white;
+}
+
+textarea{
+    width: 400px;
+    height: 100px;
+}
+
+h1{
+    font-size: 60px;
+    color: white;
+}
+
+.submit{
+    font-size: 20px;
+    color: white;
+    background:crimson;
+    border: none;
+    padding: 5px;
+    
+}
+input{
+    width: 400px;
+}
+
+label{
+    font-size: 30px;
+    
+}
+
+
+.reviews-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+   
+}
+
+
+.review{
+
+    background: white;
+    padding: 30px;
+}
+
+.review-header{
+    font-size: 20px;
+    color: black;
+}
+.review-text{
+    font-size: 18px;
+    font-style: italic;
+    color: black;
+}
+
+
+/* Table */
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
